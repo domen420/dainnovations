@@ -38,8 +38,8 @@
         .gallery-section { padding: 8rem 5%; background: var(--bg-secondary); border-top: 1px solid var(--card-border); }
         .gallery-section h2 { text-align: center; margin-bottom: 4rem; font-size: 2rem; font-weight: 300; }
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; }
-        .gallery-item { height: 400px; background-size: cover; background-position: center; border: 1px solid var(--card-border); transition: transform 0.4s ease, border-color 0.4s ease; filter: brightness(0.7); }
-        .gallery-item:hover { transform: scale(1.02); border-color: var(--accent); filter: brightness(1); }
+        .gallery-item { height: 400px; background-size: cover; background-position: center; border: 1px solid var(--card-border); transition: transform 0.4s ease, border-color 0.4s ease; }
+        .gallery-item:hover { transform: scale(1.02); border-color: var(--accent); }
         #system-gallery { padding-top: 3.5rem; }
 
         .menu-toggle { display: none; flex-direction: column; cursor: pointer; gap: 6px; }
@@ -808,8 +808,8 @@
             <div class="gallery-item" data-full="images/DSCF8501.jpeg" role="button" tabindex="0" aria-label="View photo full size" style="background-image: url('images/DSCF8501.jpeg');"></div>
             <div class="gallery-item" data-full="images/da18-1.jpg" role="button" tabindex="0" aria-label="View photo full size" style="background-image: url('images/da18-1.jpg');"></div>
             <div class="gallery-item" data-full="images/DSCF8495.jpeg" role="button" tabindex="0" aria-label="View photo full size" style="background-image: url('images/DSCF8495.jpeg');"></div>
-            <div class="gallery-item" data-full="images/20250503_194454.jpg" role="button" tabindex="0" aria-label="View photo full size" style="background-image: url('images/20250503_194454.jpg');"></div>
-            <div class="gallery-item" data-full="images/20250621_202639.jpg" role="button" tabindex="0" aria-label="View photo full size" style="background-image: url('images/20250621_202639.jpg');"></div>
+            <div class="gallery-item" data-full="images/image2.jpeg" role="button" tabindex="0" aria-label="View photo full size" style="background-image: url('images/image2.jpeg');"></div>
+            <div class="gallery-item" data-full="images/image4.jpeg" role="button" tabindex="0" aria-label="View photo full size" style="background-image: url('images/image4.jpeg');"></div>
         </div>
     </section>
 
@@ -817,26 +817,33 @@
         <h2>Event Gallery &amp; Videos</h2>
         <div class="gallery-grid">
                         <div class="gallery-item media-video" data-video="images/20250426_021251.mp4" role="button" tabindex="0" aria-label="Play video full size">
-                <video src="images/20250426_021251.mp4" muted playsinline preload=""autoplay></video>
+                <video src="images/20250426_021251.mp4" muted loop playsinline preload="metadata"></video>
                 <span class="media-label">grando portorož</span>
             </div>
             <div class="gallery-item media-video" data-video="images/20250817_001922.mp4" role="button" tabindex="0" aria-label="Play video full size">
-                <video src="images/20250817_001922.mp4" muted playsinline preload=""autoplay></video>
+                <video src="images/20250817_001922.mp4" muted loop playsinline preload="metadata"></video>
                 <span class="media-label">Kostanjevica</span>
             </div>
             <div class="gallery-item media-video" data-video="images/20250817_003037.mp4" role="button" tabindex="0" aria-label="Play video full size">
-                <video src="images/20250817_003037.mp4" muted playsinline preload=""autoplay></video>
+                <video src="images/20250817_003037.mp4" muted loop playsinline preload="metadata"></video>
                 <span class="media-label">Posavje</span>
             </div>
             <div class="gallery-item media-video" data-video="images/20250426_200700.mp4" role="button" tabindex="0" aria-label="Play video full size">
-                <video src="images/20250426_200700.mp4" muted playsinline preload=""autoplay></video>
+                <video src="images/20250426_200700.mp4" muted loop playsinline preload="metadata"></video>
                 <span class="media-label">Nova Gorica</span>
             </div>            <div class="gallery-item media-video" data-video="images/20250816_163535.mp4" role="button" tabindex="0" aria-label="Play video full size">
-                <video src="images/20250816_163535.mp4" muted playsinline preload=""autoplay></video>
+                <video src="images/20250816_163535.mp4" muted loop playsinline preload="metadata"></video>
                 <span class="media-label">kostanjevica ob Krki</span>
             </div>
+            <div class="gallery-item media-video" data-video="images/20250426_200700.mp4" role="button" tabindex="0" aria-label="Play video full size">
+                <video src="images/20250426_200700.mp4" muted loop playsinline preload="metadata"></video>
+                <span class="media-label">Nova Gorica</span>
+            </div><div class="gallery-item media-video" data-video="images/20250426_200700.mp4" role="button" tabindex="0" aria-label="Play video full size">
+                <video src="images/20250426_200700.mp4" muted loop playsinline preload="metadata"></video>
+                <span class="media-label">Nova Gorica</span>
+            </div>
             <div class="gallery-item media-video" data-video="images/20250426_013843.mp4" role="button" tabindex="0" aria-label="Play video full size">
-                <video src="images/20250426_013843.mp4" muted playsinline preload="auto" autoplay></video>
+                <video src="images/20250426_013843.mp4" muted loop playsinline preload="metadata"></video>
                 <span class="media-label">Obala</span>
             </div>
         </div>
@@ -995,6 +1002,9 @@
             });
         });
         document.querySelectorAll('.gallery-item[data-video]').forEach(function(el) {
+            var preview = el.querySelector('video');
+            el.addEventListener('mouseenter', function() { preview.play().catch(function() {}); });
+            el.addEventListener('mouseleave', function() { preview.pause(); });
             el.addEventListener('click', function() { openVideo(el.getAttribute('data-video')); });
             el.addEventListener('keydown', function(e) {
                 if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openVideo(el.getAttribute('data-video')); }
