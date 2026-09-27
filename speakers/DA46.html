@@ -1017,24 +1017,16 @@
             <div class="main-img-box" id="slider">
                 <button class="slider-btn prev" id="slider-prev">&#10094;</button>
                 <button class="slider-btn next" id="slider-next">&#10095;</button>
-                <img src="../images/da46-studio.jpg" alt="DA46 4-way full-range horn loudspeaker in matte black, three-quarter view into the horn" class="active">
-                <img src="../images/da46-studio-front.jpg" alt="DA46 4-way full-range horn loudspeaker in matte black, front view of the horn">
-                <img src="../images/da46-club.jpg" alt="DA46 pairs on DA18 subwoofer stacks beside the DJ booth in a nightclub">
-                <img src="../images/da46-festival.jpg" alt="Flown DA46 pair on a scaffold tower above DA18 subwoofers at a night open-air festival">
-                <img src="../images/da46.jpg" alt="DA46 4-way full-range horn loudspeaker, CAD model">
-                <img src="../images/da46-front.jpg" alt="DA46 horn mouth, front view">
+                <img src="../images/da46-studio-front.jpg" alt="DA46 4-way full-range horn loudspeaker in matte black, front view of the horn" class="active">
+                <img src="../images/da46-studio.jpg" alt="DA46 4-way full-range horn loudspeaker in matte black, three-quarter view into the horn">
                 <img src="../images/sh46.jpeg" alt="DA46 4-way full-range horn loudspeaker">
                 <img src="../images/image 1.jpeg" alt="D&A Innovations Acoustic Testing">
             </div>
             <div class="thumbnails" id="thumbs">
-                <div class="thumb active" data-index="0"><img src="../images/da46-studio.jpg" alt="DA46 three-quarter view"></div>
-                <div class="thumb" data-index="1"><img src="../images/da46-studio-front.jpg" alt="DA46 front view"></div>
-                <div class="thumb" data-index="2"><img src="../images/da46-club.jpg" alt="DA46 in a nightclub"></div>
-                <div class="thumb" data-index="3"><img src="../images/da46-festival.jpg" alt="DA46 at a festival"></div>
-                <div class="thumb" data-index="4"><img src="../images/da46.jpg" alt="DA46 CAD View"></div>
-                <div class="thumb" data-index="5"><img src="../images/da46-front.jpg" alt="DA46 Front View"></div>
-                <div class="thumb" data-index="6"><img src="../images/sh46.jpeg" alt="Detail 2"></div>
-                <div class="thumb" data-index="7"><img src="../images/image 1.jpeg" alt="Detail 3"></div>
+                <div class="thumb active" data-index="0"><img src="../images/da46-studio-front.jpg" alt="DA46 front view"></div>
+                <div class="thumb" data-index="1"><img src="../images/da46-studio.jpg" alt="DA46 three-quarter view"></div>
+                <div class="thumb" data-index="2"><img src="../images/sh46.jpeg" alt="DA46 built cabinet"></div>
+                <div class="thumb" data-index="3"><img src="../images/image 1.jpeg" alt="D&A Innovations Acoustic Testing"></div>
             </div>
         </div>
         <div class="product-info">
@@ -1214,7 +1206,6 @@
         }
 
         function nextImage() {
-            if(!autoScroll) return;
             let next = (currentIndex + 1) % images.length;
             showImage(next);
         }
