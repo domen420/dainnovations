@@ -213,6 +213,9 @@
         }
 
         .card-innov:hover { transform: translateY(-10px); }
+        /* Product renders: card versions with extra studio floor below the product (card_pad.py),
+           anchored to the top so the product sits above the title and text. */
+        .card-innov.product-shot { background-position: center top; }
         .card-innov:hover::before { background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%); }
         .card-innov h3 { position: relative; z-index: 2; font-size: 1.2rem; margin-bottom: 0.5rem; color: #FFFFFF; line-height: 1.5; }
         /* reserve two title lines so tags and titles align across the row */
@@ -1014,17 +1017,17 @@
             <h2>Product Ranges</h2>
         </div>
         <div class="grid">
-            <a href="products.html#point-source" class="card-innov" style="background-image: url('images/image 1.jpeg');">
+            <a href="products.html#point-source" class="card-innov product-shot" style="background-image: url('images/card-da610.jpg');">
                 <span class="card-tag">Coaxial Topology</span>
                 <h3>Point Source Speakers</h3>
                 <p>Coherent acoustic radiation for perfect imaging and phase linearity.</p>
             </a>
-            <a href="products.html#entry-horns" class="card-innov" style="background-image: url('images/image2.jpeg');">
+            <a href="products.html#entry-horns" class="card-innov product-shot" style="background-image: url('images/card-da46.jpg');">
                 <span class="card-tag">Co-Entrant Waveguide</span>
                 <h3>Multiple Entry Horns</h3>
                 <p>Advanced waveguide technology integrating multiple drivers into a single throat.</p>
             </a>
-            <a href="products.html#servo-subs" class="card-innov" style="background-image: url('images/bc118-cube.jpg');">
+            <a href="products.html#servo-subs" class="card-innov product-shot" style="background-image: url('images/card-bc118-cube.jpg');">
                 <span class="card-tag">Closed-Loop Feedback</span>
                 <h3>Subwoofers</h3>
                 <p>Closed-loop feedback control for unparalleled low-frequency precision.</p>
