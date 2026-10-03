@@ -4,12 +4,30 @@
 <head>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precision Amplification & DSP | High-Sensitivity Power | D&A Innovations</title>
-    <meta name="description" content="Ultra-low distortion power solutions and high-resolution DSP system management.">
-    <link rel="canonical" href="https://dainnovations.com/range-amplification.html">
+    <link rel="icon" type="image/png" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <title>Amplification &amp; DSP | D&amp;A Innovations</title>
+    <meta name="description" content="The DAP-8 8-channel amplifier with full system DSP: up to 2000 W per channel, FIR/IIR processing and multi-stage limiting to run complete D&amp;A stacks from 2U.">
+    <link rel="canonical" href="https://domen420.github.io/dainnovations/range-amplification.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://domen420.github.io/dainnovations/range-amplification.html">
+    <meta property="og:title" content="Amplification &amp; DSP | D&amp;A Innovations">
+    <meta property="og:description" content="The DAP-8 8-channel amplifier with full system DSP: up to 2000 W per channel, FIR/IIR processing and multi-stage limiting to run complete D&amp;A stacks from 2U.">
+    <meta property="og:image" content="https://domen420.github.io/dainnovations/images/card-dap8.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://domen420.github.io/dainnovations/range-amplification.html">
+    <meta property="twitter:title" content="Amplification &amp; DSP | D&amp;A Innovations">
+    <meta property="twitter:description" content="The DAP-8 8-channel amplifier with full system DSP: up to 2000 W per channel, FIR/IIR processing and multi-stage limiting to run complete D&amp;A stacks from 2U.">
+    <meta property="twitter:image" content="https://domen420.github.io/dainnovations/images/card-dap8.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap"></noscript>
     <style>
         :root { --bg-primary: #121212; --bg-secondary: #0A0A0A; --accent: #FFFFFF; --text-white: #FFFFFF; --card-border: rgba(255, 255, 255, 0.1); }
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -698,6 +716,41 @@
 }
 
 
+
+        /* Nav: Contact link + Get a Quote button */
+        .nav-links { align-items: center; }
+        .nav-links a { white-space: nowrap; }
+        .nav-links a.nav-quote {
+            border: 1px solid var(--accent);
+            padding: 0.6rem 1.2rem;
+            letter-spacing: 0.15em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav-links a.nav-quote:hover {
+            background: var(--accent);
+            color: var(--bg-secondary);
+            opacity: 1;
+        }
+        @media (max-width: 1499px) and (min-width: 1281px) {
+            .nav-links { gap: 1.2rem; }
+            .nav-links a { letter-spacing: 0.08em; }
+        }
+        @media (max-width: 1280px) and (min-width: 993px) {
+            .nav-links { gap: 1.1rem; }
+            .nav-links a { font-size: 0.7rem; letter-spacing: 0.06em; }
+            .nav-links a.nav-quote { padding: 0.55rem 0.9rem; letter-spacing: 0.1em; }
+            .nav-links .nav-contact { display: none; }
+            .logo-img { height: 40px; }
+        }
+        @media (max-width: 992px) {
+            .nav-item.nav-quote-item { border-bottom: none !important; margin-top: 1.2rem; }
+            .nav-links a.nav-quote {
+                justify-content: center !important;
+                text-align: center !important;
+                border: 1px solid #ffffff !important;
+                padding: 0.85rem 1rem !important;
+            }
+        }
 </style>
 </head>
 <body>
@@ -738,6 +791,8 @@
                 </div>
             </li>
             <li class="nav-item"><a href="about.html">About Us</a></li>
+            <li class="nav-item nav-contact"><a href="contact.html">Contact</a></li>
+            <li class="nav-item nav-quote-item"><a href="contact.html" class="nav-quote">Get a Quote</a></li>
         </ul>
     </nav>
     <div class="page-header"><h1>Amplification</h1></div>
@@ -757,7 +812,7 @@
         <div class="range-cta-box">
             <h3>Bespoke Acoustical Integration</h3>
             <p>Our engineering team designs custom arrays, dedicated flyware, and room-specific DSP presets for residential and commercial venues.</p>
-            <a href="about.html" class="btn-cta">Consult with Our Lab</a>
+            <a href="contact.html" class="btn-cta">Consult with Our Lab</a>
         </div>
     </section>
     
@@ -765,7 +820,7 @@
         <div class="footer-container">
             <div class="footer-col brand-col">
                 <a href="index.html" class="footer-brand-link">
-                    <img src="images/logo.png" alt="D&A Innovations" class="footer-logo-img">
+                    <img src="images/logo.png" alt="D&A Innovations" class="footer-logo-img" loading="lazy">
                 </a>
                 <p class="footer-tagline">Precision point-source speakers, multiple entry horns, and subwoofers engineered in Ljubljana, Slovenia.</p>
                 <div class="footer-status">
@@ -781,6 +836,7 @@
                     <li><a href="products.html#entry-horns">Multiple Entry Horns</a></li>
                     <li><a href="products.html#servo-subs">Subwoofers</a></li>
                     <li><a href="products.html#amplification">Amplification & DSP</a></li>
+                    <li><a href="technology.html">Engineering Technology</a></li>
                 </ul>
             </div>
 
@@ -801,7 +857,9 @@
                 <ul class="footer-menu">
                     <li><a href="buy.html">Purchase & Direct Orders</a></li>
                     <li><a href="about.html">About Us & Lab</a></li>
-                    <li><a href="about.html">Contact Engineering</a></li>
+                    <li><a href="contact.html">Contact Engineering</a></li>
+                    <li><a href="faq.html">Technical FAQ</a></li>
+                    <li><a href="downloads.html">Spec Sheet Downloads</a></li>
                     <li><a href="mailto:info@dainnovations.com" class="footer-email">info@dainnovations.com</a></li>
                 </ul>
                 <div class="footer-location">
@@ -823,7 +881,7 @@
                     <span class="sep">&middot;</span>
                     <a href="gallery.html">Gallery</a>
                     <span class="sep">&middot;</span>
-                    <a href="about.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
         </div>

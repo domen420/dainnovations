@@ -3,21 +3,39 @@
 <head>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acoustic Engineering & Bespoke Manufacturing Services | D&A Innovations</title>
-    <meta name="description" content="Professional acoustic design, CAD modeling, bespoke speaker manufacturing, and system calibration services by D&A Innovations engineers.">
+    <link rel="icon" type="image/png" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <title>Acoustic Engineering Services | D&amp;A Innovations</title>
+    <meta name="description" content="Acoustic engineering from D&amp;A Innovations: 3D CAD and simulation, CNC manufacturing in Slovenia, and on-site DSP calibration with FIR phase correction.">
     <meta name="keywords" content="acoustic design, bespoke manufacturing, system calibration, DSP tuning, audio engineering services">
-    <link rel="canonical" href="https://dainnovations.com/services.html">
+    <link rel="canonical" href="https://domen420.github.io/dainnovations/services.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://domen420.github.io/dainnovations/services.html">
+    <meta property="og:title" content="Acoustic Engineering Services | D&amp;A Innovations">
+    <meta property="og:description" content="Acoustic engineering from D&amp;A Innovations: 3D CAD and simulation, CNC manufacturing in Slovenia, and on-site DSP calibration with FIR phase correction.">
+    <meta property="og:image" content="https://domen420.github.io/dainnovations/images/system-stack-low-angle.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://domen420.github.io/dainnovations/services.html">
+    <meta property="twitter:title" content="Acoustic Engineering Services | D&amp;A Innovations">
+    <meta property="twitter:description" content="Acoustic engineering from D&amp;A Innovations: 3D CAD and simulation, CNC manufacturing in Slovenia, and on-site DSP calibration with FIR phase correction.">
+    <meta property="twitter:image" content="https://domen420.github.io/dainnovations/images/system-stack-low-angle.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap"></noscript>
     <style>
         :root {
             --bg-primary: #121212;
             --bg-secondary: #0A0A0A;
-            --accent: #C0C0C0;
+            --accent: #FFFFFF;
             --text-white: #FFFFFF;
             --text-gray: #A0A0A0;
-            --card-border: rgba(192, 192, 192, 0.1);
+            --card-border: rgba(255, 255, 255, 0.1);
         }
 
         * {
@@ -1349,6 +1367,41 @@ body::before {
     .service-card.enhanced { transform: none !important; }
 }
 
+
+        /* Nav: Contact link + Get a Quote button */
+        .nav-links { align-items: center; }
+        .nav-links a { white-space: nowrap; }
+        .nav-links a.nav-quote {
+            border: 1px solid var(--accent);
+            padding: 0.6rem 1.2rem;
+            letter-spacing: 0.15em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav-links a.nav-quote:hover {
+            background: var(--accent);
+            color: var(--bg-secondary);
+            opacity: 1;
+        }
+        @media (max-width: 1499px) and (min-width: 1281px) {
+            .nav-links { gap: 1.2rem; }
+            .nav-links a { letter-spacing: 0.08em; }
+        }
+        @media (max-width: 1280px) and (min-width: 993px) {
+            .nav-links { gap: 1.1rem; }
+            .nav-links a { font-size: 0.7rem; letter-spacing: 0.06em; }
+            .nav-links a.nav-quote { padding: 0.55rem 0.9rem; letter-spacing: 0.1em; }
+            .nav-links .nav-contact { display: none; }
+            .logo-img { height: 40px; }
+        }
+        @media (max-width: 992px) {
+            .nav-item.nav-quote-item { border-bottom: none !important; margin-top: 1.2rem; }
+            .nav-links a.nav-quote {
+                justify-content: center !important;
+                text-align: center !important;
+                border: 1px solid #ffffff !important;
+                padding: 0.85rem 1rem !important;
+            }
+        }
 </style>
 </head>
 <body>
@@ -1392,6 +1445,8 @@ body::before {
                 </div>
             </li>
             <li class="nav-item"><a href="about.html">About Us</a></li>
+            <li class="nav-item nav-contact"><a href="contact.html">Contact</a></li>
+            <li class="nav-item nav-quote-item"><a href="contact.html" class="nav-quote">Get a Quote</a></li>
         </ul>
     </nav>
 
@@ -1402,7 +1457,7 @@ body::before {
         <div class="page-header-content">
             <span class="hero-kicker"><span class="dot"></span> D&amp;A Engineering Lab &mdash; Ljubljana</span>
             <div class="hero-title">
-                <h1>Engineering Excellence</h1>
+                <h1>Acoustic Engineering Services</h1>
             </div>
             <p class="hero-sub">Beyond our standard product line, D&A Innovations provides comprehensive engineering services to realize your most ambitious acoustic projects.</p>
         </div>
@@ -1428,7 +1483,7 @@ body::before {
         </div>
         <div class="grid">
             <article class="service-card enhanced reveal tilt" style="--delay:.05s">
-                <div class="card-media" style="background-image:url('images/image2.jpeg')"></div>
+                <div class="card-media" style="background-image:url('images/system-stack-low-angle.jpg')"></div>
                 <div class="card-glow"></div>
                 <div class="card-inner">
                     <div class="icon-ring">
@@ -1445,7 +1500,7 @@ body::before {
             </article>
 
             <article class="service-card enhanced reveal tilt" style="--delay:.12s">
-                <div class="card-media" style="background-image:url('images/image3.jpeg')"></div>
+                <div class="card-media" style="background-image:url('images/system-stack-wide-bass-horns.jpg')"></div>
                 <div class="card-glow"></div>
                 <div class="card-inner">
                     <div class="icon-ring">
@@ -1462,7 +1517,7 @@ body::before {
             </article>
 
             <article class="service-card enhanced reveal tilt" style="--delay:.19s">
-                <div class="card-media" style="background-image:url('images/image4.jpeg')"></div>
+                <div class="card-media" style="background-image:url('images/system-stack-front.jpg')"></div>
                 <div class="card-glow"></div>
                 <div class="card-inner">
                     <div class="icon-ring">
@@ -1478,7 +1533,7 @@ body::before {
             </article>
 
             <article class="service-card enhanced reveal tilt" style="--delay:.26s">
-                <div class="card-media" style="background-image:url('images/image5.jpeg')"></div>
+                <div class="card-media" style="background-image:url('images/system-stack-wide-bass-horns.jpg')"></div>
                 <div class="card-glow"></div>
                 <div class="card-inner">
                     <div class="icon-ring">
@@ -1537,7 +1592,7 @@ body::before {
         <div class="services-cta-box reveal">
             <h3>Ready to Realize Your Acoustic Project?</h3>
             <p>Directly consult with our senior engineers in Ljubljana to discuss custom horn design, bespoke studio monitors, or tour sound infrastructure.</p>
-            <a href="about.html" class="btn-cta">Start an Engineering Consultation</a>
+            <a href="contact.html" class="btn-cta">Start an Engineering Consultation</a>
         </div>
     </section>
 
@@ -1547,7 +1602,7 @@ body::before {
         <div class="footer-container">
             <div class="footer-col brand-col">
                 <a href="index.html" class="footer-brand-link">
-                    <img src="images/logo.png" alt="D&A Innovations" class="footer-logo-img">
+                    <img src="images/logo.png" alt="D&A Innovations" class="footer-logo-img" loading="lazy">
                 </a>
                 <p class="footer-tagline">Precision point-source speakers, multiple entry horns, and subwoofers engineered in Ljubljana, Slovenia.</p>
                 <div class="footer-status">
@@ -1563,6 +1618,7 @@ body::before {
                     <li><a href="products.html#entry-horns">Multiple Entry Horns</a></li>
                     <li><a href="products.html#servo-subs">Subwoofers</a></li>
                     <li><a href="products.html#amplification">Amplification & DSP</a></li>
+                    <li><a href="technology.html">Engineering Technology</a></li>
                 </ul>
             </div>
 
@@ -1583,7 +1639,9 @@ body::before {
                 <ul class="footer-menu">
                     <li><a href="buy.html">Purchase & Direct Orders</a></li>
                     <li><a href="about.html">About Us & Lab</a></li>
-                    <li><a href="about.html">Contact Engineering</a></li>
+                    <li><a href="contact.html">Contact Engineering</a></li>
+                    <li><a href="faq.html">Technical FAQ</a></li>
+                    <li><a href="downloads.html">Spec Sheet Downloads</a></li>
                     <li><a href="mailto:info@dainnovations.com" class="footer-email">info@dainnovations.com</a></li>
                 </ul>
                 <div class="footer-location">
@@ -1605,7 +1663,7 @@ body::before {
                     <span class="sep">&middot;</span>
                     <a href="gallery.html">Gallery</a>
                     <span class="sep">&middot;</span>
-                    <a href="about.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
         </div>

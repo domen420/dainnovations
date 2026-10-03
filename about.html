@@ -3,21 +3,39 @@
 <head>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About D&A Innovations | Our Acoustic Philosophy & Contact</title>
-    <meta name="description" content="Learn about the D&A Innovations philosophy of precision sound. Contact our engineering lab in Ljubljana for bespoke audio projects.">
+    <link rel="icon" type="image/png" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <title>About D&amp;A Innovations | Our Acoustic Philosophy &amp; Contact</title>
+    <meta name="description" content="D&amp;A Innovations designs and builds loudspeaker systems in Ljubljana, Slovenia: CNC-machined birch enclosures, coaxial point sources and folded bass horns.">
     <meta name="keywords" content="acoustic philosophy, speaker workshop Ljubljana, sound engineering team, contact D&A Innovations">
-    <link rel="canonical" href="https://dainnovations.com/about.html">
+    <link rel="canonical" href="https://domen420.github.io/dainnovations/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://domen420.github.io/dainnovations/about.html">
+    <meta property="og:title" content="About D&amp;A Innovations | Our Acoustic Philosophy &amp; Contact">
+    <meta property="og:description" content="D&amp;A Innovations designs and builds loudspeaker systems in Ljubljana, Slovenia: CNC-machined birch enclosures, coaxial point sources and folded bass horns.">
+    <meta property="og:image" content="https://domen420.github.io/dainnovations/images/system-stack.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://domen420.github.io/dainnovations/about.html">
+    <meta property="twitter:title" content="About D&amp;A Innovations | Our Acoustic Philosophy &amp; Contact">
+    <meta property="twitter:description" content="D&amp;A Innovations designs and builds loudspeaker systems in Ljubljana, Slovenia: CNC-machined birch enclosures, coaxial point sources and folded bass horns.">
+    <meta property="twitter:image" content="https://domen420.github.io/dainnovations/images/system-stack.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap"></noscript>
     <style>
         :root {
             --bg-primary: #121212;
             --bg-secondary: #0A0A0A;
-            --accent: #C0C0C0;
+            --accent: #FFFFFF;
             --text-white: #FFFFFF;
             --text-gray: #A0A0A0;
-            --card-border: rgba(192, 192, 192, 0.1);
+            --card-border: rgba(255, 255, 255, 0.1);
         }
 
         * {
@@ -202,6 +220,37 @@
         .submit-btn:hover {
             background: var(--accent);
             color: var(--bg-secondary);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.5;
+            cursor: wait;
+        }
+
+        .form-status {
+            margin-top: 1.2rem;
+            padding: 1rem 1.2rem;
+            border: 1px solid var(--card-border);
+            font-size: 0.85rem;
+            font-weight: 300;
+        }
+
+        .form-status.is-success {
+            border-color: var(--accent);
+            color: var(--text-white);
+        }
+
+        .form-status.is-error {
+            border-color: rgba(255, 255, 255, 0.35);
+            color: var(--text-gray);
+        }
+
+        .hp-field {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
         }
 
         /* Info Grid */
@@ -902,6 +951,41 @@
 }
 
 
+
+        /* Nav: Contact link + Get a Quote button */
+        .nav-links { align-items: center; }
+        .nav-links a { white-space: nowrap; }
+        .nav-links a.nav-quote {
+            border: 1px solid var(--accent);
+            padding: 0.6rem 1.2rem;
+            letter-spacing: 0.15em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav-links a.nav-quote:hover {
+            background: var(--accent);
+            color: var(--bg-secondary);
+            opacity: 1;
+        }
+        @media (max-width: 1499px) and (min-width: 1281px) {
+            .nav-links { gap: 1.2rem; }
+            .nav-links a { letter-spacing: 0.08em; }
+        }
+        @media (max-width: 1280px) and (min-width: 993px) {
+            .nav-links { gap: 1.1rem; }
+            .nav-links a { font-size: 0.7rem; letter-spacing: 0.06em; }
+            .nav-links a.nav-quote { padding: 0.55rem 0.9rem; letter-spacing: 0.1em; }
+            .nav-links .nav-contact { display: none; }
+            .logo-img { height: 40px; }
+        }
+        @media (max-width: 992px) {
+            .nav-item.nav-quote-item { border-bottom: none !important; margin-top: 1.2rem; }
+            .nav-links a.nav-quote {
+                justify-content: center !important;
+                text-align: center !important;
+                border: 1px solid #ffffff !important;
+                padding: 0.85rem 1rem !important;
+            }
+        }
 </style>
 </head>
 <body>
@@ -944,11 +1028,13 @@
                 </div>
             </li>
             <li class="nav-item"><a href="about.html" class="active">About Us</a></li>
+            <li class="nav-item nav-contact"><a href="contact.html">Contact</a></li>
+            <li class="nav-item nav-quote-item"><a href="contact.html" class="nav-quote">Get a Quote</a></li>
         </ul>
     </nav>
 
     <div class="page-header">
-        <h1>Bespoke Audio</h1>
+        <h1>Loudspeaker Engineering Lab, Ljubljana</h1>
     </div>
 
     <section class="section">
@@ -967,24 +1053,28 @@
         </div>
 
         <div class="contact-container">
-            <form action="#">
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" placeholder="John Doe">
+            <form action="https://api.web3forms.com/submit" method="post" data-enquiry-form>
+                <div class="hp-field" aria-hidden="true">
+                    <label>Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
                 </div>
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="john@example.com">
+                    <label for="about-name">Full Name</label>
+                    <input type="text" id="about-name" name="name" placeholder="John Doe" required>
                 </div>
                 <div class="form-group">
-                    <label>Inquiry Type</label>
-                    <input type="text" placeholder="Custom Build / Consultation">
+                    <label for="about-email">Email Address</label>
+                    <input type="email" id="about-email" name="email" placeholder="john@example.com" required>
                 </div>
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="5" placeholder="Tell us about your project..."></textarea>
+                    <label for="about-type">Inquiry Type</label>
+                    <input type="text" id="about-type" name="enquiry_type" placeholder="Custom Build / Consultation">
+                </div>
+                <div class="form-group">
+                    <label for="about-message">Message</label>
+                    <textarea id="about-message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send Inquiry</button>
+                <p class="form-status" role="status" aria-live="polite" hidden></p>
             </form>
         </div>
     </section>
@@ -996,7 +1086,7 @@
         </div>
         <div class="info-item">
             <h4>Contact</h4>
-            <p>inquiry@dainnovations.com<br>+386 00 000 000</p>
+            <p>info@dainnovations.com<br>+386 00 000 000</p>
         </div>
         <div class="info-item">
             <h4>Technical Support</h4>
@@ -1009,7 +1099,7 @@
         <div class="footer-container">
             <div class="footer-col brand-col">
                 <a href="index.html" class="footer-brand-link">
-                    <img src="images/logo.png" alt="D&A Innovations" class="footer-logo-img">
+                    <img src="images/logo.png" alt="D&A Innovations" class="footer-logo-img" loading="lazy">
                 </a>
                 <p class="footer-tagline">Precision point-source speakers, multiple entry horns, and subwoofers engineered in Ljubljana, Slovenia.</p>
                 <div class="footer-status">
@@ -1025,6 +1115,7 @@
                     <li><a href="products.html#entry-horns">Multiple Entry Horns</a></li>
                     <li><a href="products.html#servo-subs">Subwoofers</a></li>
                     <li><a href="products.html#amplification">Amplification & DSP</a></li>
+                    <li><a href="technology.html">Engineering Technology</a></li>
                 </ul>
             </div>
 
@@ -1045,7 +1136,9 @@
                 <ul class="footer-menu">
                     <li><a href="buy.html">Purchase & Direct Orders</a></li>
                     <li><a href="about.html">About Us & Lab</a></li>
-                    <li><a href="about.html">Contact Engineering</a></li>
+                    <li><a href="contact.html">Contact Engineering</a></li>
+                    <li><a href="faq.html">Technical FAQ</a></li>
+                    <li><a href="downloads.html">Spec Sheet Downloads</a></li>
                     <li><a href="mailto:info@dainnovations.com" class="footer-email">info@dainnovations.com</a></li>
                 </ul>
                 <div class="footer-location">
@@ -1067,13 +1160,13 @@
                     <span class="sep">&middot;</span>
                     <a href="gallery.html">Gallery</a>
                     <span class="sep">&middot;</span>
-                    <a href="about.html">Contact</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    
+    <script src="js/enquiry-form.js" defer></script>
 
     <script>
     (function() {
