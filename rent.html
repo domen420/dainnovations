@@ -960,6 +960,19 @@
     object-fit: cover;
     display: block;
 }
+
+/* Compact headings (2026-10-03): page-title banners and section headings ~30{'top': '6rem', 'h2': '.section-header h2, .include-header h2, .cta-band h2, .notes-inner > h2, .gallery-section > h2, .deployments-head h2, .range-header h2, .principle-text h2, .principle-box h2, .about-text h2, .guarantee-header h2, .section-head h2, .process-header h2, .specs-section h2, .details-section h2'}maller */
+.page-header { padding-top: 6rem !important; padding-bottom: 1.5rem !important; }
+.page-header h1 { font-size: 2.1rem !important; margin-bottom: 0.6rem !important; }
+.page-header.hero-enhanced { min-height: 44vh !important; padding: 7.5rem 5% 4rem !important; }
+.hero-title h1 { font-size: clamp(1.5rem, 3.5vw, 2.5rem) !important; }
+.section-header h2, .include-header h2, .cta-band h2, .notes-inner > h2, .gallery-section > h2, .deployments-head h2, .range-header h2, .principle-text h2, .principle-box h2, .about-text h2, .guarantee-header h2, .section-head h2, .process-header h2, .specs-section h2, .details-section h2 { font-size: 1.4rem !important; }
+@media (max-width: 768px) {
+    .page-header { padding-top: 5.5rem !important; padding-bottom: 1.4rem !important; }
+    .page-header h1, .hero-title h1 { font-size: 1.25rem !important; }
+    .page-header.hero-enhanced { min-height: 40vh !important; padding: 6rem 5% 2.5rem !important; }
+    .section-header h2, .include-header h2, .cta-band h2, .notes-inner > h2, .gallery-section > h2, .deployments-head h2, .range-header h2, .principle-text h2, .principle-box h2, .about-text h2, .guarantee-header h2, .section-head h2, .process-header h2, .specs-section h2, .details-section h2 { font-size: 1.2rem !important; }
+}
 </style>
 </head>
 <body>
